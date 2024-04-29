@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-primary">
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-4 ">
+                    <h1 class="text-white">Crea il tuo biglietto</h1>
+                </div>
+                <div class="col-12 d-flex py-5 bg-white justify-content-center"><input type="text" id="name" placeholder="Nome e Cogome">
+                    <input type="text" id="UserAge" placeholder="Età">
+                    <input type="text" id="ChilometriDaPercorrere" placeholder="Chilometri da percorrere">
+                    <button id="generate">Genera</button>
+                    <button id="reset">Cancella</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
     <!-- link js -->
     <script src="./mains.js"></script>
 </body>
