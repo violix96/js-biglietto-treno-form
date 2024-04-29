@@ -14,6 +14,8 @@ btnGenerate.addEventListener('click', function(){
     let sconto
     let userAge = Number(document.getElementById("UserAge").value)
     console.log(userAge)
+    let nome = document.getElementById("name").value
+    let distanza = document.getElementById("ChilometriDaPercorrere").value
     
     if(userAge < 18) {
     
@@ -30,5 +32,21 @@ btnGenerate.addEventListener('click', function(){
         sconto = 0;
         console.log ("Non è stato applicato alcuno sconto, il prezzo del biglietto è:");
     }
+
+    let ticketprice = document.getElementById("ticketprice");
+    ticketprice.append (`  ${StartingPrice}`);
+
+    let ticketdiscount = document.getElementById("ticketdiscount");
+    ticketdiscount.append (`  ${sconto}`);
+
+    let ticketname = document.getElementById("ticketname");
+    ticketname.append (`  ${nome}`);
+
+    let ticketdistance = document.getElementById("ticketdistance");
+    ticketdistance.append (`  ${distanza}`);
+
+    let ticketage = document.getElementById("ticketage");
+    ticketage.append (`  ${userAge}`);
+    
 });
 
