@@ -1,0 +1,2 @@
+// reset js
+'use strict';
